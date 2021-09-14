@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="contenedor">
+    <header>
+        <h1>Este es el titulo escrito en h1</h1>
+    </header>
+
+    <h2>Encabezdos</h2>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Otro</a>
+            </li>
+        </ul>
+    </nav>
+    <form action="#" method="POST">
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha">
+        <br/><br/>
+        <label for="cliente">Cliente</label>
+        <input required type="text" name="cliente" placeholder="escriba su nombre">
+        <br/><br/>
+        <label for="cantidad">Cantidad</label>
+        <input type="number" name="cantidad" placeholder="Escriba la cantidad">
+        <label for="envio">Tipo de envio</label>
+        <input type="radio" name="envio" value="N">Normal
+        <input type="radio" name="envio" value="E">Express
+        <br/><br/>
+        <label for="">Horario de Entrega</label>
+        <input type="checkbox" name="horarios[]" value="1">Jornada de la mañana
+        <input type="checkbox" name="horarios[]" value="2">Jornada de la tarde
+        <input type="checkbox" name="horarios[]" value="3">Jornada de la noche
+        <br/><br/>
+        <label for="">Producto</label>
+        <select name="productos[]" >
+            <option value="-1">Seleccione un producto</option>
+            <option value="1">Memoria USB</option>
+            <option value="2">Disco Duro</option>
+            <option value="3">Mouse</option>
+            <option value="4">Pantalla LCD</option>
+        </select>
+        <br/><br/>
+        <label for="observaciones">Observaciones</label>
+        <textarea placeholder="Escriba si tiene alguan observacion" name="observaciones" cols="30" rows="5"></textarea>
+        <!-- <input type="range" name="rango" value="50"> -->
+        <br/><br/>
+        <input type="button" name="boton" value="Botón">
+        <button type="button"></button>
+
+    </form>
+</body>
+</html>
